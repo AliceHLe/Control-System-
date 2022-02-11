@@ -11,6 +11,6 @@ analog_in = AnalogIn(board.A1)
 analog_out = AnalogOut(board.A0)
 
 while True:
-    light = get_voltage(analog_in)
+    light = analog_in.value 
     analog_out.value = 65535 - light
     time.sleep(0.1)
