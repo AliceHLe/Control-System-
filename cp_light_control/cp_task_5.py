@@ -15,10 +15,10 @@ while True:
     #receive analog_in data 
     light = analog_in.value
     #print so that we can move the sensor
-    print("LED: " + light)
+    print("LED: " + str(light))
     if light < 20000:
-        print("Too dim! Move the LED closer to the sensor")
+        print("Too close!")
     if light > 40000:
-        print("Too bright! Move the LED further away from the sensor")
+        print("Too far!")
     time.sleep(0.1)
     
