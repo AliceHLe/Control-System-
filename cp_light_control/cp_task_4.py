@@ -4,13 +4,18 @@
 
 import time
 import board
-from analogio import AnalogIn
-from analogio import AnalogOut
+from analogio import AnalogIn, AnalogOut
 
 analog_in = AnalogIn(board.A1)
 analog_out = AnalogOut(board.A0)
 
+#while loop to run on forever
 while True:
+    #get the value of the sensor A1
     light = analog_in.value 
-    analog_out.value = 65535 - light
+    print(light)
+    #assign A0 to light variable
+    control_light = light
+    analog_out.value = control_light
+    print(control_light)
     time.sleep(0.1)
