@@ -11,7 +11,11 @@ analog_out = AnalogOut(board.A0)
 while True:
     # Count up from 0 to 65535, with 64 increment
     # which ends up corresponding to the DAC's 10-bit range
+    #Update the analog_out.value 
     for i in range(0, 65535, 64):
         analog_out.value = i
-    while analog_out.value = 6535:
+    #If the maximum light level is reached, the LED is turned off  
+    if analog_out.value = 6535:
         analog_out.value = 0
+        #break so that the while loop won't run again
+        break
