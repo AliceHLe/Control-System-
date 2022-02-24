@@ -13,5 +13,5 @@ while True:
     # which ends up corresponding to the DAC's 10-bit range
     for i in range(0, 65535, 64):
         analog_out.value = i
-    if analog_out.value = 6535:
+    while analog_out.value = 6535:
         analog_out.value = 0
