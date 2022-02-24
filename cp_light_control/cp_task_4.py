@@ -13,9 +13,8 @@ analog_out = AnalogOut(board.A0)
 while True:
     #get the value of the sensor A1
     light = analog_in.value 
-    print(light)
     #assign A0 to light variable
     control_light = light
     analog_out.value = control_light
-    print(control_light)
+    print("Light sensor: " + str(light) + "    LED:" + str(control_light))
     time.sleep(0.1)
