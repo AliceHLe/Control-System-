@@ -1,4 +1,7 @@
-#Reads an analog light sensor into a variable called input. Print out the value of this variable every 0.5 seconds.
+#Reads an analog light sensor into a variable called input. 
+#Print out the value of this variable every 0.5 seconds.
+
+#You can identify the context of a given control problem, the outputs, and the input used in an algorithm.
 
 import time
 import board
