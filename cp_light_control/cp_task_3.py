@@ -4,13 +4,17 @@
 
 import time
 import board
-from analogio import AnalogIn
-from analogio import AnalogOut
+from analogio import AnalogIn, AnalogOut
 
 analog_in = AnalogIn(board.A1)
 analog_out = AnalogOut(board.A0)
 
+#while loop to run on forever
 while True:
-    light = get_voltage(analog_in)
+    #get the value of the sensor A1
+    light = analog_in.value
+    #print to sense the light value
+    print(light)
+    #assign A0 to shine as brighta as A1
     analog_out.value = light
     time.sleep(0.1)
