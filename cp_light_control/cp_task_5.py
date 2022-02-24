@@ -9,6 +9,11 @@ analog_in = AnalogIn(board.A1)
 analog_out = AnalogOut(board.A0)
 
 while True:
+    #set the LED brightness to be 60000
+    analog_out.value = 60000
+    #receive analog_in data 
     light = analog_in.value
-    analog_out.value = 65535 - light
+    #print so that we can move the sensor
+    print(light)
     time.sleep(0.1)
+    
