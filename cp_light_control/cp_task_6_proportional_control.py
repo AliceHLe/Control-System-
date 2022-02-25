@@ -1,5 +1,6 @@
-#With the sensor and LED near each other as in Task 5, write a program 
-#that automatically adjusts the brightness of the LED to make the analog reading exactly 30000. 
+#With the sensor and LED near each other as in Task 5, 
+#write a program that automatically adjusts the brightness of 
+#the LED to make the analog reading exactly 30000. 
 
 # Write your code here :-)
 import time
